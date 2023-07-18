@@ -1,6 +1,8 @@
 import { Box } from "@chakra-ui/react";
 import "./App.css";
 import BannerPage from "./Components/BannerPage";
+import SearchForm from "./Components/SearchForm";
+import DataGrid from "./Components/DataGrid";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         minHeight="100vh"
       >
         <BannerPage />
+        <SearchForm />
+        <DataGrid />
       </Box>
     </div>
   );
