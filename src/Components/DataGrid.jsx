@@ -11,20 +11,6 @@ const DataGrid = ({ filteredCapsules }) => {
 
   return (
     <Box py={4} px={8}>
-      {/* <Grid templateColumns="repeat(3, 1fr)" gap={4}>
-        {data?.map((item) => (
-          <Box
-            key={item.capsule_id}
-            p={4}
-            border="1px"
-            borderColor="gray.200"
-            cursor="pointer"
-            onClick={() => handleClick(item)}
-          >
-            <Text fontWeight="bold">{item.capsule_serial}</Text>
-          </Box>
-        ))}
-      </Grid> */}
 
       <SimpleGrid columns={3} spacing={4}>
         {filteredCapsules.map((capsule) => (
