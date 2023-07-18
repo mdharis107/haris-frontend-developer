@@ -1,13 +1,4 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Input,
-  Select,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
-import React, { useState } from "react";
+import { Box, Button, Flex, Input, Select } from "@chakra-ui/react";
 
 const SearchForm = ({
   onSearch,
@@ -17,10 +8,8 @@ const SearchForm = ({
   type,
   status,
   originalLaunch,
-  filteredCapsules,
 }) => {
   const handleSearch = () => {
-    // Pass the search filters to the parent component for processing
     console.log("object");
     onSearch({ status, originalLaunch, type });
   };

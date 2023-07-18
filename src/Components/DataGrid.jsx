@@ -1,4 +1,4 @@
-import { Box, Grid, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 
 const DataGrid = ({ filteredCapsules }) => {
@@ -11,9 +11,8 @@ const DataGrid = ({ filteredCapsules }) => {
 
   return (
     <Box py={4} px={8}>
-
       <SimpleGrid columns={3} spacing={4}>
-        {filteredCapsules.map((capsule) => (
+        {filteredCapsules?.map((capsule) => (
           <Box
             key={capsule.capsule_id}
             p={4}
